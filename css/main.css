@@ -93,6 +93,7 @@ body{
     text-decoration: none;
 }.video-main nav .item_links li a:hover {
     background: transparent;
+    color: white;
     transition: background .4s ease,color .4s ease;
 }
 /* footer */
