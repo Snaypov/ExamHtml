@@ -1,0 +1,113 @@
+html{
+    scroll-behavior: smooth;
+  }
+  li {
+    list-style: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.logo img{
+    width: 200px;
+    height: 100px;
+}
+
+/* main */
+.video-main{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.video-main video{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+}
+.video_bg__content{
+  z-index: 2;
+  padding: 25px;
+  font-size: 50px;
+  text-transform: uppercase;
+  background-color: orange;
+}
+.video-main nav{
+    position: absolute;
+    z-index: 6;
+    right: 0;
+    bottom: 50px;
+    left: 0;
+    margin: auto;
+    transition: bottom .4s ease;
+}
+.video_bg__content:hover{
+    background-color: rgb(78, 78, 78, 0.2);
+}
+@media only screen and (min-width: 21.875em){
+.video-main nav {
+    width: calc(100% - 140px);
+}
+}
+@media only screen and (min-width: 64em){
+.video-main nav .item_links {
+    flex-direction: row;
+}
+}
+.video-main .item_links li {
+    color: #000;
+    flex: 1;
+}
+.video-main nav .item_links {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.video-main nav .item_links li a {
+    background: #ff9e1b;
+    color: #000;
+    display: block;
+    font-size: .6875rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin: 0 1px 1px 0;
+    padding: 20px 10px;
+    text-align: center;
+    text-decoration: none;
+}.video-main nav .item_links li a:hover {
+    background: transparent;
+    transition: background .4s ease,color .4s ease;
+}
+/* footer */
+.footer {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    background-color: black;
+  }
+  .footer a, .footer h1{
+    color: orange;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 25px;
+  }
+  .logoh1{
+    padding: 15px 0 0 15px;
+  }
